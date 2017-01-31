@@ -527,7 +527,7 @@ button {
 }
 .page-footer__inner {
   width: 100%;
-  padding: 45px;
+  padding: 50px 45px;
 }
 .page-footer__email-title {
   display: inline-block;
@@ -561,7 +561,7 @@ button {
   color: #ffffff;
   text-transform: uppercase;
   font-family: 'PrototypsterMedium';
-  margin: 17px 0;
+  margin: 21px 0;
 }
 .page-footer__registration {
   font-size: 28px;
@@ -607,6 +607,9 @@ button {
   padding-left: 10px;
 }
 @media (min-width: 768px) {
+  .page-header__inner {
+    padding-top: 50px;
+  }
   .orders__inner:after:before,
   .orders__inner:before:before,
   .orders__inner:after:after,
@@ -635,7 +638,7 @@ button {
   .orders__items-inner {
     float: left;
     min-width: 768px;
-    padding: 0 34px 43px;
+    padding: 0 34px 38px;
   }
   .orders__items-inner:after:before,
   .orders__items-inner:before:before,
@@ -702,7 +705,7 @@ button {
     margin: 0 auto;
   }
   .orders__items-inner {
-    padding: 0 41px 43px;
+    padding: 0 41px 38px;
   }
   .orders__item:nth-of-type(3n) {
     margin-right: 20px;
