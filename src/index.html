@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta content='width=device-width, initial-scale=1.0' name='viewport'>
+    <title>My Orders</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!--DEV  Вставка JS, который будет качать шрифт при первом посещении домена -->
+    <script>@@include('fonts/font_loading.js')</script>
+    <!--DEV  Резервное подключение CSS -файла с WOFF шрифтом на случай отключенного JS -->
+    <noscript><link rel="stylesheet" href="css/font_opensans_woff2.css"></noscript>
+</head>
+<body>
+  <!-- header -->
+  <div class="page-header" id="to-menu">
+    <div class="page-header__inner">
+      <!-- logo -->
+      <div class="logo">
+        <img src="img/logo.png" alt="Logo">
+      </div>
+    </div>
+  </div>
+  <main>
+    <div class="orders">
+      <div class="orders__inner">
+        <div class="orders__sort">
+          <span class="orders__sort-title">Сортировать:</span>
+          <div class="orders__sort-filter">
+            <span class="orders__sort-date">по дате<a id="sort-date" class="orders__sort-date-up"></a></span>
+            <span class="orders__sort-ready">по готовности<a id="sort-ready" class="orders__sort-ready-up"></a></span>
+          </div>
+        </div>
+        <div class="orders__items">
+          <div class="orders__items-inner">
+          <div class="orders__item">
+            <div class="orders__item-inner">
+              <div class="orders__item-img-skin">
+                <img src="img/orders__item1.jpg" alt="заказ">
+              </div>
+              <div class="orders__item-description">
+                <div class="orders__item-title">Название заказа</div>
+                <div class="orders__item-status">Статус: в печати</div>
+                <div class="orders__item-date">Загружен: 11.04.13</div>
+                <div class="orders__item-product">Фотополимер покрашенный</div>
+                <div class="orders__item-quantity">Количество экземпляров: 1</div>
+                <div class="orders__item-hue"></div>
+                <div class="orders__item-size"></div>
+                <div class="orders__item-action">Выполнен на 60%</div>
+              </div>
+            </div>
+          </div>
+          <div class="orders__item">
+            <div class="orders__item-inner">
+              <div class="orders__item-img-skin">
+                <img src="img/orders__item2.jpg" alt="заказ">
+              </div>
+              <div class="orders__item-description">
+                <div class="orders__item-title">Название заказа</div>
+                <div class="orders__item-status">Статус: отправлен</div>
+                <div class="orders__item-date">Загружен: 11.04.13</div>
+                <div class="orders__item-product">Фотополимер покрашенный</div>
+                <div class="orders__item-quantity">Количество экземпляров: 1</div>
+                <div class="orders__item-hue">Цет: черный</div>
+                <div class="orders__item-size">Размер: 160 х 70</div>
+                <div class="orders__item-action">+Добавить в магазин</div>
+              </div>
+            </div>
+          </div>
+          <div class="orders__item">
+            <div class="orders__item-inner">
+              <div class="orders__flag"></div>
+              <div class="orders__item-img-skin">
+                <img src="img/orders__item3.jpg" alt="заказ">
+              </div>
+              <div class="orders__item-description">
+                <div class="orders__item-title">Название заказа</div>
+                <div class="orders__item-status">Статус: в Моем магазине</div>
+                <div class="orders__item-date">Загружен: 11.04.13</div>
+                <div class="orders__item-product">Фотополимер покрашенный</div>
+                <div class="orders__item-quantity">Количество экземпляров: 1</div>
+                <div class="orders__item-hue"></div>
+                <div class="orders__item-size"></div>
+                <div class="orders__item-action">Выполнен на 60%</div>
+              </div>
+            </div>
+          </div>
+          <div class="orders__item">
+            <div class="orders__item-inner">
+              <div class="orders__item-img-skin">
+                <img src="img/orders__item4.jpg" alt="заказ">
+              </div>
+              <div class="orders__item-description">
+                <div class="orders__item-title">Название заказа</div>
+                <div class="orders__item-status">Статус: в печати</div>
+                <div class="orders__item-date">Загружен: 11.04.13</div>
+                <div class="orders__item-product">Фотополимер покрашенный</div>
+                <div class="orders__item-quantity">Количество экземпляров: 1</div>
+                <div class="orders__item-hue"></div>
+                <div class="orders__item-size"></div>
+                <div class="orders__item-action">Выполнен на 60%</div>
+              </div>
+            </div>
+          </div>
+          <div class="orders__item">
+            <div class="orders__item-inner">
+              <div class="orders__item-img-skin">
+                <img src="img/orders__item5.jpg" alt="заказ">
+              </div>
+              <div class="orders__item-description">
+                <div class="orders__item-title">Название заказа</div>
+                <div class="orders__item-status">Статус: в печати</div>
+                <div class="orders__item-date">Загружен: 11.04.13</div>
+                <div class="orders__item-product">Фотополимер покрашенный</div>
+                <div class="orders__item-quantity">Количество экземпляров: 1</div>
+                <div class="orders__item-hue"></div>
+                <div class="orders__item-size"></div>
+                <div class="orders__item-action">Выполнен на 60%</div>
+              </div>
+            </div>
+          </div>
+          <div class="orders__item">
+            <div class="orders__item-inner">
+              <div class="orders__item-img-skin">
+                <img src="img/orders__item6.jpg" alt="заказ">
+              </div>
+              <div class="orders__item-description">
+                <div class="orders__item-title">Название заказа</div>
+                <div class="orders__item-status">Статус: отправлен</div>
+                <div class="orders__item-date">Загружен: 11.04.13</div>
+                <div class="orders__item-product">Фотополимер покрашенный</div>
+                <div class="orders__item-quantity">Количество экземпляров: 1</div>
+                <div class="orders__item-hue">Цвет: черный</div>
+                <div class="orders__item-size">Размер: 160 х 70</div>
+                <div class="orders__item-action">Выполнен на 60%</div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="orders__arrow" id="toTop">Наверх</div>
+
+
+
+      </div>
+    </div>
+  </main>
+  <div class="page-footer">
+    <div class="page-footer__inner">
+      <div class="page-footer__email">
+        <span class="page-footer__email-title">Ваш email:</span>
+        <input type="text" class="page-footer__email-field" placeholder="dedal79@gmail.com" id="email">
+        <span class="page-footer__email-valid" id="valid"></span>
+      </div>
+      <label class="page-footer__checkbox-news">
+        <input class="page-footer__checkbox-flag" type="checkbox" name="checkbox-test" checked>
+        <span class="page-footer__checkbox-custom"></span>
+        <span class="page-footer__label">Подписаться на новости</span>
+      </label>
+      <a href="#" class="page-footer__registration">Зарегистрироваться</a>
+    </div>
+  </div>
+  <!-- <div class="scroll-top" id="toTop"></div> -->
+<script src="js/script.min.js"></script>
+</body>
+</html>

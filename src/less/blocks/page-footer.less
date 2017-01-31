@@ -1,0 +1,150 @@
+.page-footer{
+  background-color: @color-bg;
+  background-image: url('../img/footer__bg.png');
+  background-repeat: repeat;
+  background-size: cover;
+  &__inner{
+    width: 100%;
+    padding: 45px;
+  }
+
+  &__email-title{
+    display: inline-block;
+    font-size: @font-size;
+    color: @color-item;
+    text-transform: uppercase;
+    font-family: @font_PrototypsterMedium;
+    padding-bottom: 10px;
+    padding-right: 18px;
+  }
+
+  &__email-field{
+    width: 210px;
+    padding: 8px 12px;
+    text-transform: uppercase;
+    color: @color-sort;
+    border-radius: 4px;
+    font-family: @font_PrototypsterMedium;
+    font-size: 18px;
+  }
+
+  &__email-valid{
+    display: block;
+    font-size: @font-size;
+    color: @color-item;
+    text-transform: uppercase;
+    font-family: @font_PrototypsterMedium;
+    padding-top: 10px;
+  }
+
+  &__checkbox-news{
+    display: block;
+    font-size: 18px;
+    color: @color-item;
+    text-transform: uppercase;
+    font-family: @font_PrototypsterMedium;
+    margin: 17px 0;
+  }
+
+  &__registration{
+    font-size: 28px;
+    color: @color-filter;
+    font-family: @font_PrototypsterMedium;
+    text-transform: uppercase;
+    text-decoration: underline;
+  }
+
+  &__checkbox-flag{
+    display: none;
+  }
+
+  /* Задаем внешний вид для кастомного чекбокса.*/
+  &__checkbox-custom {
+    position: relative;      /* Обязательно задаем, чтобы мы могли абсолютным образом позиционировать псевдоэлемент внутри кастомного чекбокса */
+    width: 28px;             /* Обязательно задаем ширину */
+    height: 28px;            /* Обязательно задаем высоту */
+    background: url('../img/checkbox-border.png');
+  }
+
+  /* Кастомный чекбокс и лейбл центрируем по вертикали.*/
+  &__checkbox-custom,
+  &__label {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  /* Если реальный чекбокс отмечен, то тогда добавляем данный признак и к кастомному чекбоксу  */
+  &__checkbox-flag:checked + &__checkbox-custom::before {
+    content: "";             /* Добавляем псевдоэлемент */
+    display: block;          /* Делаем его блочным элементом */
+    position: absolute;      /* Позиционируем его абсолютным образом */
+
+    /* Задаем расстояние от верхней, правой, нижней и левой границы */
+    top: 2px;
+    right: 2px;
+    bottom: 2px;
+    left: 2px;
+
+    background: url('../img/checkbox-flag.png');
+    background-repeat: no-repeat;
+    background-position: center;
+
+  }
+
+  &__label{
+    padding-left: 10px;
+  }
+
+
+
+  @media (min-width: @screen-sm){
+     &__inner{
+
+     }
+
+     &__inner:after,
+     &__inner:before{
+      .clearfix();
+       // content: '';
+       // clear: both;
+       // display: block;
+     }
+
+     &__checkbox-news{
+       padding-left: 75px;
+     }
+
+     &__registration{
+       padding-left: 75px;
+     }
+
+     &__email-valid{
+      display: inline-block;
+      padding-left: 10px;
+     }
+  }
+
+  @media (min-width: @screen-lg){
+    &__inner{
+      width: 1024px;
+      margin: 0 auto;
+    }
+  }
+
+}
+
+@media (min-width: @screen-sm){
+  .page-footer{
+
+  }
+
+  .page-footer:after,
+  .page-footer:before{
+    .clearfix();
+      // content: '';
+      // clear: both;
+      // display: block;
+  }
+
+
+}

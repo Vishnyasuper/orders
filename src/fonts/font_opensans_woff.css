@@ -1,0 +1,80 @@
+/*
+Файл для отдельной подгрузки WOFF-версии файла JS-ом.
+Будет обработан при сборке: в url() будет подставлена base64 кодированная версия указанного файла
+*/
+
+@font-face {
+  font-family: 'Open Sans_my';
+  src: url('opensans.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans_my';
+  src: url('opensans_bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'PT Sans Caption';
+    src: url('../fonts/ptsanscaption/ptsanscaption.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PT Sans Caption';
+    src: url('../fonts/ptsanscaption/ptsanscaptionbold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PT Serif Caption';
+    src: url('../fonts/ptserifcaption/ptserifcaption.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PT Serif Caption';
+    src: url('../fonts/ptserifcaption/ptserifcaptionitalic.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'PT Serif Regular';
+    src: url('../fonts/ptserif/ptserif.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PT SansRegular';
+    src: url('../fonts/ptsans.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PT SansItalic';
+    src: url('../fonts/ptsansitalic.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'PT SansBold';
+    src: url('../fonts/ptsansbold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+// @font-face {
+//     font-family: 'PrototypsterMedium';
+//     src: url('../fonts/PrototypsterMedium.woff') format('woff');
+
+//     font-weight: 500;
+//     font-style: normal;
+// }
