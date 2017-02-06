@@ -1,4 +1,4 @@
-$(document).ready(function(){
+//$(document).ready(function(){
 
 
     function anchorScroll(boxAnchorLink){
@@ -15,7 +15,7 @@ $(document).ready(function(){
 
   anchorScroll('#to__menu');
 
-});
+//});
 
 var t0, scrollTime;
 
@@ -41,7 +41,7 @@ function showScrollTopButton(){
 };
 
 
-$(document).ready(function(){
+//$(document).ready(function(){
 /*Для сортировки по стоимости и готовности*/
 var $sortToggle = $('#sort-date');
 $sortToggle.click(function(e) {
@@ -65,11 +65,11 @@ $sortToggle.click(function(e) {
 
 });
 
-});
+//});
 
 
 // Проверка валидности поля email
-$(document).ready(function() {
+//$(document).ready(function() {
     $('#email').blur(function() {
       if($(this).val() != '') {
         // Поле email заполнено
@@ -87,5 +87,5 @@ $(document).ready(function() {
           $('#valid').text('Поле email не должно быть пустым');
       }
     });
-});
+//});
 

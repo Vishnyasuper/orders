@@ -41,6 +41,7 @@
     border-bottom: 15px solid @color-filter;
     top: -10px;
     left: 55px;
+    cursor: pointer;
   }
 
   &__sort-date-down{
@@ -49,6 +50,7 @@
     border-top: 15px solid @color-filter;
     top: 0;
     left: 55px;
+    cursor: pointer;
   }
 
   &__sort-ready{
@@ -68,6 +70,7 @@
     border-bottom: 15px solid @color-filter;
     top: -10px;
     left: 95px;
+    cursor: pointer;
   }
 
   &__sort-ready-down{
@@ -76,6 +79,7 @@
     border-top: 15px solid @color-filter;
     top: 0;
     left: 95px;
+    cursor: pointer;
   }
 
   &__items{
@@ -83,6 +87,7 @@
   }
 
   &__item{
+    display: block;
     position: relative;
     width: 220px;
     margin: 22px auto;
@@ -91,6 +96,7 @@
     cursor: pointer;
     background-color: @color-item;
     padding-bottom: 40px;
+    text-decoration: none;
     //box-shadow: inset 0 0 0 2px;
   }
 
@@ -101,6 +107,13 @@
   }
 
   &__item:hover &__item-action{
+    display: none;
+    color: @color-filter;
+    text-decoration: underline;
+  }
+
+  &__item:hover &__item-add{
+    display: block;
     color: @color-filter;
     text-decoration: underline;
   }
@@ -177,12 +190,24 @@
     text-transform: uppercase;
   }
 
+  &__item-add{
+    display: none;
+    position: absolute;
+    bottom: 14px;
+    color: @color-action;
+    font-family: @font_PrototypsterMedium;
+    font-size: 24px;
+    text-transform: uppercase;
+  }
+
   &__item-action--active{
     color: @color-filter;
   }
 
   &__arrow{
-    padding: 23px;
+    display: inline-block;
+    margin: 23px;
+    //padding: 23px;
     text-align: center;
     color: @color-filter;
     font-size: 36px;
@@ -190,6 +215,10 @@
     text-transform: uppercase;
     text-decoration: underline;
     cursor: pointer;
+  }
+
+  &__arrow-wrapper{
+    text-align: center;
   }
 
   &__item-inner{
@@ -233,8 +262,8 @@
     }
 
     &__arrow{
-      padding: 43px;
-
+      //padding: 43px;
+      margin: 0 43px 43px 43px;
     }
 
     &__items-inner{
@@ -287,7 +316,8 @@
     }
 
     &__arrow{
-      padding: 54px 43px 43px 43px;
+      //padding: 54px 43px 43px 43px;
+      margin: 0 43px 43px 43px;
     }
 
 

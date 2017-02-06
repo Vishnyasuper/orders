@@ -33,7 +33,7 @@
         <div class="orders__items">
           <div class="orders__items-inner">
           <!-- отдельный блок с заказом -->
-          <div class="orders__item">
+          <a href="#" class="orders__item">
             <div class="orders__item-inner">
               <div class="orders__item-img-skin">
                 <img src="img/orders__item1.jpg" alt="заказ">
@@ -47,11 +47,12 @@
                 <div class="orders__item-hue"></div>
                 <div class="orders__item-size"></div>
                 <div class="orders__item-action">Выполнен на 60%</div>
+                <div class="orders__item-add">+Добавить в магазин</div>
               </div>
             </div>
-          </div>
+          </a>
           <!-- отдельный блок с заказом -->
-          <div class="orders__item">
+          <a href="#" class="orders__item">
             <div class="orders__item-inner">
               <div class="orders__item-img-skin">
                 <img src="img/orders__item2.jpg" alt="заказ">
@@ -64,12 +65,13 @@
                 <div class="orders__item-quantity">Количество экземпляров: 1</div>
                 <div class="orders__item-hue">Цет: черный</div>
                 <div class="orders__item-size">Размер: 160 х 70</div>
-                <div class="orders__item-action">+Добавить в магазин</div>
+                <div class="orders__item-action">Выполнен на 60%</div>
+                <div class="orders__item-add">+Добавить в магазин</div>
               </div>
             </div>
-          </div>
+          </a>
           <!-- отдельный блок с заказом -->
-          <div class="orders__item">
+          <a href="#" class="orders__item">
             <div class="orders__item-inner">
               <div class="orders__flag"></div>
               <div class="orders__item-img-skin">
@@ -84,11 +86,12 @@
                 <div class="orders__item-hue"></div>
                 <div class="orders__item-size"></div>
                 <div class="orders__item-action">Выполнен на 60%</div>
+                <div class="orders__item-add">+Добавить в магазин</div>
               </div>
             </div>
-          </div>
+          </a>
           <!-- отдельный блок с заказом -->
-          <div class="orders__item">
+          <a href="#" class="orders__item">
             <div class="orders__item-inner">
               <div class="orders__item-img-skin">
                 <img src="img/orders__item4.jpg" alt="заказ">
@@ -102,11 +105,12 @@
                 <div class="orders__item-hue"></div>
                 <div class="orders__item-size"></div>
                 <div class="orders__item-action">Выполнен на 60%</div>
+                <div class="orders__item-add">+Добавить в магазин</div>
               </div>
             </div>
-          </div>
+          </a>
           <!-- отдельный блок с заказом -->
-          <div class="orders__item">
+          <a href="#" class="orders__item">
             <div class="orders__item-inner">
               <div class="orders__item-img-skin">
                 <img src="img/orders__item5.jpg" alt="заказ">
@@ -120,11 +124,12 @@
                 <div class="orders__item-hue"></div>
                 <div class="orders__item-size"></div>
                 <div class="orders__item-action">Выполнен на 60%</div>
+                <div class="orders__item-add">+Добавить в магазин</div>
               </div>
             </div>
-          </div>
+          </a>
           <!-- отдельный блок с заказом -->
-          <div class="orders__item">
+          <a href="#" class="orders__item">
             <div class="orders__item-inner">
               <div class="orders__item-img-skin">
                 <img src="img/orders__item6.jpg" alt="заказ">
@@ -138,29 +143,38 @@
                 <div class="orders__item-hue">Цвет: черный</div>
                 <div class="orders__item-size">Размер: 160 х 70</div>
                 <div class="orders__item-action">Выполнен на 60%</div>
+                <div class="orders__item-add">+Добавить в магазин</div>
               </div>
             </div>
-          </div>
+          </a>
           </div>
         </div>
-        <div class="orders__arrow" id="toTop">Наверх</div>
+        <div class="orders__arrow-wrapper">
+          <div class="orders__arrow" id="toTop">Наверх</div>
+        </div>
       </div>
     </div>
   </main>
   <!-- footer -->
   <div class="page-footer">
     <div class="page-footer__inner">
-      <div class="page-footer__email">
-        <span class="page-footer__email-title">Ваш email:</span>
-        <input type="email" class="page-footer__email-field" placeholder="dedal79@gmail.com" id="email">
-        <span class="page-footer__email-valid" id="valid"></span>
-      </div>
-      <label class="page-footer__checkbox-news">
-        <input class="page-footer__checkbox-flag" type="checkbox" name="checkbox-test" checked>
-        <span class="page-footer__checkbox-custom"></span>
-        <span class="page-footer__label">Подписаться на новости</span>
-      </label>
-      <a href="#" class="page-footer__registration">Зарегистрироваться</a>
+      <form action="#" class="page-footer__form">
+        <div class="page-footer__email">
+          <label>
+            <span class="page-footer__email-title">Ваш email:</span>
+            <input type="email" class="page-footer__email-field" placeholder="dedal79@gmail.com" id="email">
+            <span class="page-footer__email-valid" id="valid"></span>
+          </label>
+        </div>
+        <label class="page-footer__checkbox-news">
+          <input class="page-footer__checkbox-flag" type="checkbox" name="checkbox-test" checked>
+          <span class="page-footer__checkbox-custom"></span>
+          <span class="page-footer__label">Подписаться на новости</span>
+        </label>
+        <input type="submit" class="page-footer__registration" value="Зарегистрироваться">
+        <!-- <a href="#" class="page-footer__registration">Зарегистрироваться</a> -->
+      </form>
+
     </div>
   </div>
 
