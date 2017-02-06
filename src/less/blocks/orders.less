@@ -32,11 +32,12 @@
     padding: 0 5px 0 0;
     line-height: 14px;
     padding-right: 40px;
-
+    cursor: pointer;
   }
 
-  &__sort-date-up{
+  &__sort-date-up:after{
     position: absolute;
+    content: '';
     border: 10px solid transparent;
     border-bottom: 15px solid @color-filter;
     top: -10px;
@@ -44,8 +45,9 @@
     cursor: pointer;
   }
 
-  &__sort-date-down{
+  &__sort-date-down:after{
     position: absolute;
+    content: '';
     border: 10px solid transparent;
     border-top: 15px solid @color-filter;
     top: 0;
@@ -62,10 +64,12 @@
     border-bottom: 1px dashed @color-filter;
     padding: 0;
     line-height: 14px;
+    cursor: pointer;
   }
 
-  &__sort-ready-up{
+  &__sort-ready-up:after{
     position: absolute;
+    content: '';
     border: 10px solid transparent;
     border-bottom: 15px solid @color-filter;
     top: -10px;
@@ -73,8 +77,9 @@
     cursor: pointer;
   }
 
-  &__sort-ready-down{
+  &__sort-ready-down:after{
     position: absolute;
+    content: '';
     border: 10px solid transparent;
     border-top: 15px solid @color-filter;
     top: 0;
