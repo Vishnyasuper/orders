@@ -354,10 +354,10 @@ button {
   padding-bottom: 5px;
 }
 .orders__sort-filter {
+  position: relative;
   text-align: center;
 }
 .orders__sort-date {
-  position: relative;
   display: inline-block;
   color: #ff5e42;
   font-family: 'Tahoma Regular';
@@ -388,7 +388,6 @@ button {
   cursor: pointer;
 }
 .orders__sort-ready {
-  position: relative;
   display: inline-block;
   color: #ff5e42;
   font-family: 'Tahoma Regular';
