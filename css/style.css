@@ -374,6 +374,7 @@ button {
   border-bottom: 15px solid #ff5e42;
   top: -10px;
   left: 55px;
+  cursor: pointer;
 }
 .orders__sort-date-down {
   position: absolute;
@@ -381,6 +382,7 @@ button {
   border-top: 15px solid #ff5e42;
   top: 0;
   left: 55px;
+  cursor: pointer;
 }
 .orders__sort-ready {
   position: relative;
@@ -398,6 +400,7 @@ button {
   border-bottom: 15px solid #ff5e42;
   top: -10px;
   left: 95px;
+  cursor: pointer;
 }
 .orders__sort-ready-down {
   position: absolute;
@@ -405,11 +408,13 @@ button {
   border-top: 15px solid #ff5e42;
   top: 0;
   left: 95px;
+  cursor: pointer;
 }
 .orders__items {
   text-align: left;
 }
 .orders__item {
+  display: block;
   position: relative;
   width: 220px;
   margin: 22px auto;
@@ -418,6 +423,7 @@ button {
   cursor: pointer;
   background-color: #ffffff;
   padding-bottom: 40px;
+  text-decoration: none;
 }
 .orders__item:hover {
   border: 6px solid #ff5e42;
@@ -425,6 +431,12 @@ button {
   color: #ff5e42;
 }
 .orders__item:hover .orders__item-action {
+  display: none;
+  color: #ff5e42;
+  text-decoration: underline;
+}
+.orders__item:hover .orders__item-add {
+  display: block;
   color: #ff5e42;
   text-decoration: underline;
 }
@@ -489,11 +501,21 @@ button {
   font-size: 24px;
   text-transform: uppercase;
 }
+.orders__item-add {
+  display: none;
+  position: absolute;
+  bottom: 14px;
+  color: #b8b8b8;
+  font-family: 'PrototypsterMedium';
+  font-size: 24px;
+  text-transform: uppercase;
+}
 .orders__item-action--active {
   color: #ff5e42;
 }
 .orders__arrow {
-  padding: 23px;
+  display: inline-block;
+  margin: 23px;
   text-align: center;
   color: #ff5e42;
   font-size: 36px;
@@ -501,6 +523,9 @@ button {
   text-transform: uppercase;
   text-decoration: underline;
   cursor: pointer;
+}
+.orders__arrow-wrapper {
+  text-align: center;
 }
 .orders__item-inner {
   overflow: hidden;
@@ -562,6 +587,7 @@ button {
   text-transform: uppercase;
   font-family: 'PrototypsterMedium';
   margin: 21px 0;
+  cursor: pointer;
 }
 .page-footer__registration {
   font-size: 28px;
@@ -569,6 +595,8 @@ button {
   font-family: 'PrototypsterMedium';
   text-transform: uppercase;
   text-decoration: underline;
+  background: transparent;
+  border: none;
 }
 .page-footer__checkbox-flag {
   display: none;
@@ -633,7 +661,7 @@ button {
     padding-bottom: 17px;
   }
   .orders__arrow {
-    padding: 43px;
+    margin: 0 43px 43px 43px;
   }
   .orders__items-inner {
     float: left;
@@ -677,7 +705,7 @@ button {
     padding-left: 75px;
   }
   .page-footer__registration {
-    padding-left: 75px;
+    margin-left: 75px;
   }
   .page-footer__email-valid {
     display: inline-block;
@@ -714,7 +742,7 @@ button {
     margin-right: 0;
   }
   .orders__arrow {
-    padding: 54px 43px 43px 43px;
+    margin: 0 43px 43px 43px;
   }
   .page-footer__inner {
     width: 1024px;
