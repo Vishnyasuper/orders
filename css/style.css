@@ -367,17 +367,20 @@ button {
   padding: 0 5px 0 0;
   line-height: 14px;
   padding-right: 40px;
+  cursor: pointer;
 }
-.orders__sort-date-up {
+.orders__sort-date-up:after {
   position: absolute;
+  content: '';
   border: 10px solid transparent;
   border-bottom: 15px solid #ff5e42;
   top: -10px;
   left: 55px;
   cursor: pointer;
 }
-.orders__sort-date-down {
+.orders__sort-date-down:after {
   position: absolute;
+  content: '';
   border: 10px solid transparent;
   border-top: 15px solid #ff5e42;
   top: 0;
@@ -393,17 +396,20 @@ button {
   border-bottom: 1px dashed #ff5e42;
   padding: 0;
   line-height: 14px;
+  cursor: pointer;
 }
-.orders__sort-ready-up {
+.orders__sort-ready-up:after {
   position: absolute;
+  content: '';
   border: 10px solid transparent;
   border-bottom: 15px solid #ff5e42;
   top: -10px;
   left: 95px;
   cursor: pointer;
 }
-.orders__sort-ready-down {
+.orders__sort-ready-down:after {
   position: absolute;
+  content: '';
   border: 10px solid transparent;
   border-top: 15px solid #ff5e42;
   top: 0;
