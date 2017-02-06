@@ -23,7 +23,7 @@
   }
 
   &__sort-date{
-    //position: relative;
+    position: relative;
     display: inline-block;
     color: @color-filter;
     font-family: @font_TahomaRegular;
@@ -36,7 +36,7 @@
     cursor: pointer;
   }
 
-  &__sort-date-up:after{
+  &__sort-date-up::after{
     position: absolute;
     content: '';
     border: 10px solid transparent;
@@ -46,7 +46,7 @@
     cursor: pointer;
   }
 
-  &__sort-date-down:after{
+  &__sort-date-down::after{
     position: absolute;
     content: '';
     border: 10px solid transparent;
