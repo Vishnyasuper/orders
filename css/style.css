@@ -358,6 +358,7 @@ button {
   text-align: center;
 }
 .orders__sort-date {
+  position: relative;
   display: inline-block;
   color: #ff5e42;
   font-family: 'Tahoma Regular';
@@ -369,7 +370,7 @@ button {
   padding-right: 40px;
   cursor: pointer;
 }
-.orders__sort-date-up:after {
+.orders__sort-date-up::after {
   position: absolute;
   content: '';
   border: 10px solid transparent;
@@ -378,7 +379,7 @@ button {
   left: 55px;
   cursor: pointer;
 }
-.orders__sort-date-down:after {
+.orders__sort-date-down::after {
   position: absolute;
   content: '';
   border: 10px solid transparent;
