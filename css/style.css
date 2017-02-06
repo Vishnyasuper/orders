@@ -354,7 +354,6 @@ button {
   padding-bottom: 5px;
 }
 .orders__sort-filter {
-  position: relative;
   text-align: center;
 }
 .orders__sort-date {
@@ -370,7 +369,7 @@ button {
   padding-right: 40px;
   cursor: pointer;
 }
-.orders__sort-date-up::after {
+.orders__sort-date-up:after {
   position: absolute;
   content: '';
   border: 10px solid transparent;
@@ -379,7 +378,7 @@ button {
   left: 55px;
   cursor: pointer;
 }
-.orders__sort-date-down::after {
+.orders__sort-date-down:after {
   position: absolute;
   content: '';
   border: 10px solid transparent;
@@ -389,6 +388,7 @@ button {
   cursor: pointer;
 }
 .orders__sort-ready {
+  position: relative;
   display: inline-block;
   color: #ff5e42;
   font-family: 'Tahoma Regular';
